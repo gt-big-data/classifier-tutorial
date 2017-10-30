@@ -28,4 +28,4 @@ predicted_location_test_set = lr_clf.predict(tweet_test_set)
 print(accuracy_score(location_test_set, predicted_location_test_set))
 
 text = ['Atlanta Atlanta Farms Georgia Tech']
-print(lr_clf.predict(make_features(text)))
+print(lr_clf.predict(make_features(text))) # THIS IS NOT WORKING
