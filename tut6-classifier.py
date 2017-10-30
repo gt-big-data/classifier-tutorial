@@ -25,4 +25,7 @@ lr_clf = LogisticRegression(solver='saga', max_iter=3000)
 lr_clf.fit(tweet_training_set, location_training_set)
 predicted_location_test_set = lr_clf.predict(tweet_test_set)
 
-print accuracy_score(location_test_set, predicted_location_test_set)
+print(accuracy_score(location_test_set, predicted_location_test_set))
+
+text = ['Atlanta Atlanta Farms Georgia Tech']
+print(lr_clf.predict(make_features(text)))
